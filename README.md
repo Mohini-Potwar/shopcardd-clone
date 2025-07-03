@@ -1,4 +1,6 @@
-🛍️ ShopCardd Clone – React Frontend UI
+# shopcardd-clone
+
+# 🛍️ ShopCardd Clone – React Frontend UI
 This project is a React-based clone of the homepage of the e-commerce platform ShopCardd.
 It replicates the user interface and core layout of the original website using React JS, Bootstrap 5, and custom CSS styling.
 
