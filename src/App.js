@@ -1,21 +1,17 @@
-
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-
-
 function App() {
   return (
     <>
-      {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div className="container">
           <a className="navbar-brand animated-brand" href="#">
             <FontAwesomeIcon icon={faCartShopping} />
- <span>ShopCardd</span>
+            <span>ShopCardd</span>
           </a>
           <button
             className="navbar-toggler"
@@ -44,55 +40,49 @@ function App() {
         </div>
       </nav>
 
-      {/* Carousel */}
       <section>
         <div className="container my-4">
-
           <div id="homeCarousel" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src="/img.jpg" className="carousel-img" alt="Slide 1" />
-      <div className="carousel-caption d-none d-md-block">
-        <h5>Shop Smarter, Live Better</h5>
-        <p>Explore fashion, gadgets, and essentials in one place</p>
-      </div>
-    </div>
-    <div className="carousel-item">
-      <img src="/img2.jpg" className="carousel-img" alt="Slide 2" />
-      <div className="carousel-caption d-none d-md-block">
-        <h5>Seamless Shopping Experience</h5>
-        <p>Stay updated with trends and enjoy hassle-free checkout</p>
-      </div>
-    </div>
-    <div className="carousel-item">
-      <img src="/img3.jpg" className="carousel-img" alt="Slide 3" />
-      <div className="carousel-caption d-none d-md-block">
-        <h5>Personalized Just for You</h5>
-        <p>Enjoy app-exclusive deals and real-time recommendations</p>
-      </div>
-    </div>
-  </div>
-
-  {/* Optional Previous/Next buttons */}
-  <button className="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
-
-         </div>
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img src="/img.jpg" className="carousel-img" alt="Slide 1" />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Shop Smarter, Live Better</h5>
+                  <p>Explore fashion, gadgets, and essentials in one place</p>
+                </div>
+              </div>
+              <div className="carousel-item">
+                <img src="/img2.jpg" className="carousel-img" alt="Slide 2" />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Seamless Shopping Experience</h5>
+                  <p>Stay updated with trends and enjoy hassle-free checkout</p>
+                </div>
+              </div>
+              <div className="carousel-item">
+                <img src="/img3.jpg" className="carousel-img" alt="Slide 3" />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Personalized Just for You</h5>
+                  <p>Enjoy app-exclusive deals and real-time recommendations</p>
+                </div>
+              </div>
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
       </section>
 
-      {/* Categories */}
       <section id="categories" className="bg-white py-5">
         <h2 className="section-title text-danger">ShopCardd Store Categories</h2>
-    <p className="section-subtitle text-muted">
-      From essentials to extravagance, we cover it all
-    </p>
+        <p className="section-subtitle text-muted">
+          From essentials to extravagance, we cover it all
+        </p>
         <div className="container-fluid py-4">
           <div className="row text-center g-4">
             {[
@@ -119,7 +109,6 @@ function App() {
         </div>
       </section>
 
-      {/* About */}
       <section id="about" className="container py-5">
         <div className="row align-items-center">
           <div className="col-md-5 mb-4 mb-md-0">
@@ -132,54 +121,48 @@ function App() {
           <div className="col-md-7">
             <h6 className="text-uppercase text-danger fw-bold mb-2">About Us</h6>
             <h2 className="fw-bold mb-3 display-6">Your Gateway to Endless Shopping Possibilities</h2>
-           <p className="text-muted mb-3">
-                 <strong>ShopCardd</strong>'s Android and iOS apps are your gateway to a world of endless shopping possibilities. Our app allows you to effortlessly browse through a variety of products, from fashion and accessories to electronics and home decor.
+            <p className="text-muted mb-3">
+              <strong>ShopCardd</strong>'s Android and iOS apps are your gateway to a world of endless shopping possibilities.
             </p>
-
             <p className="text-muted mb-4">
-             With features such as personalized recommendations and real-time updates, you can stay up-to-date with the latest trends and deals. Our hassle-free checkout process makes shopping more convenient than ever before.
+              With features such as personalized recommendations and real-time updates, you can stay up-to-date with the latest trends and deals.
             </p>
-
             <a href="#contact" className="btn btn-danger px-4 rounded-pill fw-semibold shadow-sm">Contact Us</a>
           </div>
         </div>
 
-        {/* Additional Info Cards Under About Us */}
-<div className="row mt-5">
-  {[
-    {
-      title: 'Trusted Platform',
-      icon: 'https://img.icons8.com/fluency/96/thumb-up.png',
-      desc: 'ShopCardd created robust technology platform for users and businesses to Save, Money, Time, Excuses and on demand daily essentials to fulfill their day today needs or respectively huge Discounts and motivates local commerce in city or across the country.'
-    },
-    {
-      title: 'Safe & Secure',
-      icon: 'https://img.icons8.com/fluency/96/lock.png',
-      desc: 'ShopCardd is the facilitator platform to support hyperlocal market place to discover tailor made solutions for local businesses online/ offline in the city; by giving them each and every assistant to setup online/ offline businesses.'
-    },
-    {
-      title: 'Quick Assistance',
-      icon: 'https://img.icons8.com/fluency/96/help.png',
-      desc: 'We made, Websites or mobile app or facilitator platform to cater tailor made solutions to handles market predictions, online/offline orders demands and information to assist local businesses to reach out large customer based market online/ offline to supplies daily essentials product and services in the city and across the country.'
-    },
-  ].map((item, index) => (
-    <div className="col-md-4 mb-4" key={index}>
-      <div className="bg-light rounded-4 shadow-sm p-4 h-100 text-center">
-        <div className="mb-3">
-          <img src={item.icon} alt={item.title} style={{ width: '60px' }} />
+        <div className="row mt-5">
+          {[
+            {
+              title: 'Trusted Platform',
+              icon: 'https://img.icons8.com/fluency/96/thumb-up.png',
+              desc: 'ShopCardd created robust technology platform for users and businesses to Save, Money, Time, Excuses and on demand daily essentials.'
+            },
+            {
+              title: 'Safe & Secure',
+              icon: 'https://img.icons8.com/fluency/96/lock.png',
+              desc: 'Facilitator platform to support hyperlocal market place to discover tailor made solutions for local businesses online/offline.'
+            },
+            {
+              title: 'Quick Assistance',
+              icon: 'https://img.icons8.com/fluency/96/help.png',
+              desc: 'We cater tailor made solutions to handle market predictions, online/offline order demands and customer assistance.'
+            },
+          ].map((item, index) => (
+            <div className="col-md-4 mb-4" key={index}>
+              <div className="bg-light rounded-4 shadow-sm p-4 h-100 text-center">
+                <div className="mb-3">
+                  <img src={item.icon} alt={item.title} style={{ width: '60px' }} />
+                </div>
+                <h5 className="fw-bold">{item.title}</h5>
+                <p className="text-muted">{item.desc}</p>
+                <a href="#contact" className="btn btn-outline-primary btn-sm rounded-pill mt-2">Discover More</a>
+              </div>
+            </div>
+          ))}
         </div>
-        <h5 className="fw-bold">{item.title}</h5>
-        <p className="text-muted">{item.desc}</p>
-        <a href="#contact" className="btn btn-outline-primary btn-sm rounded-pill mt-2">Discover More</a>
-      </div>
-    </div>
-  ))}
-</div>
-
-        
       </section>
 
-      {/* Contact */}
       <section id="contact" className="py-5" style={{ backgroundColor: '#f8f9fa' }}>
         <div className="container">
           <div className="row align-items-center bg-white text-dark rounded-4 overflow-hidden shadow-sm">
@@ -196,8 +179,6 @@ function App() {
               <p className="mb-2">Feel free to contact us anytime</p>
               <p className="mb-4 text-muted">
                 We're here to help! Whether you have a question, need assistance, or just want to share your thoughts, we're all ears.
-                Our team is dedicated to providing you with the best possible support. Reach out to us via phone or email and we'll get
-                back to you as soon as possible.
               </p>
               <a href="mailto:support@shopcardd.com" className="btn btn-danger px-4 rounded-pill fw-semibold">Contact Support</a>
             </div>
@@ -205,7 +186,6 @@ function App() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-dark text-white py-3 mt-5">
         <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
           <p className="mb-0">&copy; 2025 ShopCardd. All rights reserved.</p>
