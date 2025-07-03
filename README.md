@@ -44,5 +44,5 @@ It is built using **React JS + Bootstrap 5** and styled for a modern, mobile-res
 
 ---
 
-## 🧾 Folder Structure
+https://github.com/Mohini-Potwar/shopcardd-clone/issues/1#issue-3200090050
 
