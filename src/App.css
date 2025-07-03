@@ -1,0 +1,248 @@
+  /* === Reset and Base Styles === */
+    :root {
+  scroll-padding-top: 80px; /* Adjust based on your navbar height */
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Navbar === */
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: #dc3545;
+}
+
+.navbar-nav .nav-link {
+  color: #333;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #dc3545;
+}
+
+section[id]::before {
+  content: "";
+  display: block;
+  height: 80px;   /* Same as navbar height */
+  margin-top: -80px;
+  visibility: hidden;
+}
+
+.carousel-item {
+  height: 65vh;
+  display: flex;
+}
+
+/* .carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+.carousel-img {
+  width: 100%;
+  height: 85vh; /* Or 75vh as per design */
+  object-fit: cover;
+}
+
+
+
+
+.carousel-inner {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 12px 20px;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.section-title {
+  font-weight: 800;
+  font-size: 2.2rem;
+  color: #dc3545; /* Bootstrap red */
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 0.9rem;
+    bottom: 5%;
+    padding: 10px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
+
+/* === Sections === */
+.section-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 60px;
+  color: #333;
+}
+
+/* === Category Section === */
+.category-btns {
+  margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.category-btns button {
+  background: #fff;
+  border: 2px solid #dc3545;
+  color: #dc3545;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.category-btns button:hover {
+  background: #dc3545;
+  color: #fff;
+}
+
+.category-box {
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.category-box:hover {
+  box-shadow: 0 10px 25px rgba(220, 53, 69, 0.3);
+  transform: translateY(-5px);
+}
+
+#categories p {
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* === About Section === */
+#about h6 {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+#about h2 {
+  font-size: 2rem;
+  color: #212529;
+  font-weight: 700;
+}
+
+#about p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+#about img {
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+#about .row.mt-5 .bg-light {
+  transition: 0.3s ease;
+}
+
+#about .row.mt-5 .bg-light:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* === Contact Section === */
+#contact {
+  background-color: #f8f9fa;
+}
+
+#contact .row {
+  background-color: #fff;
+  color: #333;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+#contact img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#contact p {
+  font-size: 1rem;
+  color: #555;
+}
+
+#contact .btn-danger {
+  background-color: #dc3545;
+  border: none;
+  padding: 10px 24px;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+#contact .btn-danger:hover {
+  background-color: #bb2d3b;
+}
+
+/* === Footer === */
+footer {
+  background-color: #212529;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
