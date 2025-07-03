@@ -12,8 +12,6 @@ It is built using **React JS + Bootstrap 5** and styled for a modern, mobile-res
 - ✅ Create a front-end clone of ShopCardd’s homepage
 - ✅ Practice React, Bootstrap, and responsive layout
 - ✅ Showcase animated carousel, category display, and CTA sections
-- ✅ Add proper documentation for HR review
-- ✅ Upload the project to GitHub
 
 ---
 
